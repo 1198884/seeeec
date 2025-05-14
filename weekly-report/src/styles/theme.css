@@ -1,0 +1,71 @@
+/* 浅色主题变量 */
+:root {
+  --bg-color: #f5f7fa;
+  --bg-color-secondary: #ffffff;
+  --text-color: #303133;
+  --text-color-secondary: #909399;
+  --border-color: #dcdfe6;
+  --primary-color: #409EFF;
+  --primary-light: #36cfc9;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  
+  /* 卡片样式 */
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  
+  /* 图表颜色 */
+  --chart-bar-bg: #e6f7ff;
+  --chart-bar-hover: #bae7ff;
+  --chart-text: #8c8c8c;
+}
+
+/* 深色主题变量 */
+html[data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --bg-color-secondary: #242424;
+  --text-color: #e5eaf3;
+  --text-color-secondary: #a3a6ad;
+  --border-color: #4c4d4f;
+  --primary-color: #409EFF;
+  --primary-light: #36cfc9;
+  --success-color: #67c23a;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --info-color: #909399;
+  
+  /* 卡片样式 */
+  --card-bg: #242424;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  
+  /* 图表颜色 */
+  --chart-bar-bg: #363636;
+  --chart-bar-hover: #404040;
+  --chart-text: #a3a6ad;
+}
+
+/* Element Plus 深色主题覆盖 */
+html[data-theme='dark'] {
+  --el-bg-color: var(--bg-color-secondary);
+  --el-text-color-primary: var(--text-color);
+  --el-text-color-regular: var(--text-color-secondary);
+  --el-border-color: var(--border-color);
+}
+
+html[data-theme='dark'] .el-card {
+  --el-card-bg-color: var(--card-bg);
+}
+
+html[data-theme='dark'] .el-button {
+  --el-button-bg-color: var(--card-bg);
+}
+
+html[data-theme='dark'] .el-table {
+  --el-table-bg-color: var(--card-bg);
+  --el-table-tr-bg-color: var(--card-bg);
+  --el-table-header-bg-color: var(--bg-color-secondary);
+} 
